@@ -11,6 +11,10 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<User> Users => Set<User>();
     public DbSet<Role> Roles => Set<Role>();
+    public DbSet<Device> Devices => Set<Device>();
+    public DbSet<DeviceLog> DeviceLogs => Set<DeviceLog>();
+    public DbSet<PendingEvent> PendingEvents => Set<PendingEvent>();
+    public DbSet<OperationLog> OperationLogs => Set<OperationLog>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
